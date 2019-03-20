@@ -46,7 +46,10 @@ myLast data =
 
 
 myButLast data =
-    data |> List.reverse |> List.drop 1 |> List.head
+    data
+        |> List.reverse
+        |> List.drop 1
+        |> List.head
 
 
 
@@ -65,7 +68,9 @@ elementAt data index =
         Nothing
 
     else
-        data |> List.take index |> myLast
+        data
+            |> List.take index
+            |> myLast
 
 
 
